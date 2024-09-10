@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+
+:root {
+    --collor-accent: rgb(249, 186, 56);
+    --color-text: #ffffff;
+    --color-menu:rgba(255, 255, 255, 0.73);
+    --color-background-card: rgb(14, 49, 84);
+    --color-button:rgb(20, 168, 91);
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 15px;
+    margin: auto;
+}

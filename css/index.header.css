@@ -1,0 +1,57 @@
+.header {
+    background: var(--collor-accent);
+}
+
+.header__logo {
+    font-size: 56px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-background-card);
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+
+    .menu__item {
+        color: var(--color-background-card);
+        text-decoration: none;
+    }
+    .menu__item:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 600px) {
+    .header_nav {
+
+        display: flex;
+    }
+
+    .header__title,
+    .header__menu {
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        justify-content: space-around;
+
+    }
+}
+
+.header__banner {
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://img.freepik.com/free-photo/the-adorable-illustration-of-kittens-playing-in-the-forest-generative-ai_260559-483.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725840000&semt=ais_hybrid");
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__title {
+    color: var(--color-text);
+}
